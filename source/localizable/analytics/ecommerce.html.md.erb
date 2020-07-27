@@ -26,12 +26,14 @@ The `addOrder` command creates an Ecommerce order object.
 
 ##### Data Parameters
 
-Name       | Type   | Required | Description
----------- | ------ | -------- | -----------
-`order_id` | String | Yes      | The Order ID that was produced by your e-shop. It is used to uniquely identify the transaction.
-`revenue`  | String | Yes      | The total revenue or grand total of the order. This value must include shipping and tax costs. Any additional payment cost should be excluded.
-`shipping` | String | Yes      | The total shipping cost of the order. Any additional payment cost should be excluded.
-`tax`      | String | Yes      | The total tax of the order.
+Name            | Type   | Required | Description
+--------------- | ------ | -------- | -----------
+`order_id`      | String | Yes      | The Order ID that was produced by your e-shop. It is used to uniquely identify the transaction.
+`revenue`       | String | Yes      | The total revenue or grand total of the order. This value must include shipping and tax costs. Any additional payment cost should be excluded.
+`shipping`      | String | Yes      | The total shipping cost of the order. Any additional payment cost should be excluded.
+`tax`           | String | Yes      | The total tax of the order.
+`paid_by`       | String | No       | The payment method type of the order. The predefined payment method types are described in the table below.
+`paid_by_descr` | String | No       | The payment method description of the order. The predefined payment method descriptions are described in the table below.
 
 > ##### Note
 > Make sure **not** to include any cash on delivery (COD) costs in either `revenue` or `shipping`.
