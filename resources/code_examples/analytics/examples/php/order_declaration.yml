@@ -4,10 +4,12 @@
 
   // Example of an Order to report with Analytics
   $order = array(
-    'order_id'  => '123456',
-    'revenue'   => '1840.38',
-    'shipping'  => '3.50',
-    'tax'       => '422.49'
+    'order_id'      => '123456',
+    'revenue'       => '1840.38',
+    'shipping'      => '3.50',
+    'tax'           => '422.49',
+    'paid_by'       => 'bank_transfer',
+    'paid_by_descr' => 'Bank transfer'
   );
 
   // Example of Order Items to report with Analytics
